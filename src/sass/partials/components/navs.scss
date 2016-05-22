@@ -1,0 +1,13 @@
+nav {
+	li {
+		list-style: none;
+	  a {
+	    color: white;
+		text-decoration: none;
+		padding-right: 30px;
+	    &:hover {
+	      text-decoration: underline;
+	    }
+	  }
+  }
+}

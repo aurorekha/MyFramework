@@ -1,0 +1,102 @@
+/*
+	Created:		01.05.2016
+	Author:			Rekha B
+	Version:		1.0
+*/
+/* Custom Variables */
+/* Partials */
+nav {
+  background: #2B2B2B; }
+  nav ul li {
+    float: left; }
+
+nav li {
+  list-style: none; }
+  nav li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 30px; }
+    nav li a:hover {
+      text-decoration: underline; }
+
+/* Layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0 auto; }
+
+[class|=col] {
+  background: #2B2B2B;
+  border: 1px solid white;
+  float: left;
+  flex-grow: 12;
+  padding: 12px;
+  margin: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s linear; }
+
+.grid [class|=col]:hover {
+  background: gray;
+  transition: 0.3s; }
+
+.col-12 {
+  width: 100%; }
+  .col-12::after {
+    content: " col-12"; }
+
+.col-11 {
+  width: calc(100%/12*11 - 20px); }
+  .col-11::after {
+    content: " col-11"; }
+
+.col-10 {
+  width: calc(100%/12*10 - 20px); }
+  .col-10::after {
+    content: " col-10"; }
+
+.col-9 {
+  width: calc(100%/12*9 - 20px); }
+  .col-9::after {
+    content: " col-9"; }
+
+.col-8 {
+  width: calc(100%/12*8 - 20px); }
+  .col-8::after {
+    content: " col-8"; }
+
+.col-7 {
+  width: calc(100%/12*7 - 20px); }
+  .col-7::after {
+    content: " col-7"; }
+
+.col-6 {
+  width: calc(100%/12*6 - 20px); }
+  .col-6::after {
+    content: " col-6"; }
+
+.col-5 {
+  width: calc(100%/12*5 - 20px); }
+  .col-5::after {
+    content: " col-5"; }
+
+.col-4 {
+  width: calc(100%/12*4 - 20px); }
+  .col-4::after {
+    content: " col-4"; }
+
+.col-3 {
+  width: calc(100%/12*3 - 20px); }
+  .col-3::after {
+    content: " col-3"; }
+
+.col-2 {
+  width: calc(100%/12*2 - 20px); }
+  .col-2::after {
+    content: " col-2"; }
+
+.col-1 {
+  width: calc(100%/12 - 20px); }
+  .col-1::after {
+    content: " col-1"; }
